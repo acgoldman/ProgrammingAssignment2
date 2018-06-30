@@ -6,9 +6,9 @@
 ## this function, makeCacheMatrix merely sets the matrix and stores it in
 ## the calling environment rather than the function environment
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(myCMatrix = matrix()) {
   i <- NULL
-  set <- function(y=matrix()){
+  set <- function(y){
     myCMatrix <<- y
     print(myCMatrix)
     i <<- NULL
